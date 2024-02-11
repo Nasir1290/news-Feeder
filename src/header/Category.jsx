@@ -1,29 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import useNewsQuery from "../hooks/useNewsQuery";
 
 export default function Category() {
+
+  const [category, setCategory] = useState(null);
+  const newses = useNewsQuery(category);
+
+  
+  const handleNewsQuery = (event) => {
+    setCategory(event.target.name);
+  };
+
   return (
-    <div class="container mx-auto mt-6">
-      <ul class="flex flex-wrap items-center justify-center gap-5 text-xs font-semibold lg:text-base">
+    <div className="container mx-auto mt-6">
+      <ul className="flex flex-wrap items-center justify-center gap-5 text-xs font-semibold lg:text-base">
         <li>
-          <a href="#">General</a>
+          <button name="general" onClick={handleNewsQuery}>
+            General
+          </button>
         </li>
         <li>
-          <a href="#">Business</a>
+          <button name="science" onClick={handleNewsQuery}>
+            Science
+          </button>
         </li>
         <li>
-          <a href="#">Entertainment</a>
+          <button name="business" onClick={handleNewsQuery}>
+            Business
+          </button>
         </li>
         <li>
-          <a href="#">Health</a>
+          <button name="entertainment" onClick={handleNewsQuery}>
+            Entertainment
+          </button>
         </li>
         <li>
-          <a href="#">Science</a>
+          <button name="health" onClick={handleNewsQuery}>
+            Health
+          </button>
         </li>
         <li>
-          <a href="#">Sports</a>
-        </li>
-        <li>
-          <a href="#">Technology</a>
+          <button name="sports" onClick={handleNewsQuery}>
+            Sports
+          </button>
         </li>
       </ul>
     </div>

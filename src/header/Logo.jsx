@@ -1,11 +1,12 @@
 import React from "react";
+import LogoImage from '../assets/logo.png';
 
 export default function Logo() {
   return (
     <a href="/">
       <img
-        class="max-w-[100px] md:max-w-[165px]"
-        src="./assets/logo.png"
+        className="max-w-[100px] md:max-w-[165px]"
+        src={LogoImage}
         alt="Lws"
       />
     </a>
