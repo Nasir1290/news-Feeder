@@ -5,16 +5,13 @@ import Footer from "./Footer";
 import newsContext from "./contexts/newsContext";
 import useNewsQuery from "./hooks/useNewsQuery";
 
-
 export default function App() {
   const [newses, setNewses] = useState(null);
   return (
-    <div>
-      <newsContext.Provider value={{ newses, setNewses }}>
-        <Header />
-        <NewsItems />
-        <Footer />
-      </newsContext.Provider>
-    </div>
+    <newsContext.Provider value={{ newses, setNewses }}>
+      <Header />
+      <NewsItems />
+      <Footer />
+    </newsContext.Provider>
   );
 }
