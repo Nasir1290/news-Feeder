@@ -11,7 +11,7 @@ export default function Category() {
 
   return (
     <div className="container mx-auto">
-      <ul className="flex flex-wrap items-center justify-center gap-5 text-xs font-semibold lg:text-base">
+      <ul className="flex flex-wrap items-center justify-center gap-1 text-xs font-semibold lg:text-base">
         <li className=" hover:bg-white cursor-pointer rounded-lg p-2 transition-transform">
           <button name="general" onClick={handleNewsQuery}>
             General
