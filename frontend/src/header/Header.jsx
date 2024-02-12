@@ -11,8 +11,8 @@ export default function Header() {
   }, []);
   console.log(screenSize);
   return (
-    <nav className="py-6 md:py-4 fixed top-0 w-full !bg-[#7e96cf] z-50">
-      <div className="container mx-auto flex items-center  gap-x-2">
+    <nav className="py-4 md:py-4 fixed top-0 w-full !bg-[#7e96cf] z-50">
+      <div className="container mx-auto flex items-center  gap-x-1">
         {screenSize >= 600 && (
           <>
             <Date />
