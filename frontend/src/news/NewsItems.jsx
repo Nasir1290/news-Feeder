@@ -11,7 +11,7 @@ export default function NewsItems() {
     newsData = newses.articles;
   }
   if (newses?.result) {
-    newsData = newses.result;
+    newsData = newses.result
   }
   return (
     <main className="my-[10rem] lg:my-[10rem]">
