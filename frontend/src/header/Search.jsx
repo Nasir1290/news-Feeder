@@ -21,11 +21,12 @@ export default function Search() {
         <input
           type="text"
           placeholder="Search item....."
-          className=" m-2 bg-gray-400 text-purple-900 font-bold p-1 text-xl"
+          className=" m-2 bg-white text-purple-900 font-bold p-1 text-xl"
           onChange={handleSearchInput}
         />
       )}
       <img
+      className=" m-4  hover:bg-white rounded-xl cursor-pointer p-2 transition-transform"
         onClick={() => {
           setShowInput((showInput) => !showInput);
         }}

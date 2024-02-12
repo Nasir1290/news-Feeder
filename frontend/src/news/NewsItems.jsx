@@ -14,7 +14,7 @@ export default function NewsItems() {
     newsData = newses.result;
   }
   return (
-    <main className="my-10 lg:my-14">
+    <main className="my-[10rem] lg:my-[10rem]">
       {newsData?.map((news, index) => (
         <div key={index} className="container mx-auto grid grid-cols-12 gap-8">
           <div className="col-span-12 grid grid-cols-12 gap-6 self-start xl:col-span-8">
